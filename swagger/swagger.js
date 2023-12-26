@@ -6,11 +6,11 @@
     "version": "1"
   },
   "paths": {
-    "/": {
+    "/get-swapi-people": {
       "get": {
         "summary": "getPeople",
         "description": "",
-        "operationId": "getPeople.get./",
+        "operationId": "getPeople.get./get-swapi-people",
         "consumes": [
           "application/json"
         ],

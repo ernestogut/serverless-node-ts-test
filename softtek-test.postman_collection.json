@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "bf006cbe-a12c-47f9-853a-7e94453d6032",
+		"name": "Softtek Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11707017"
+	},
+	"item": [
+		{
+			"name": "GET_SWAPI_PEOPLE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://rh23v5dm2d.execute-api.us-east-1.amazonaws.com/get-swapi-people",
+					"protocol": "https",
+					"host": [
+						"rh23v5dm2d",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"get-swapi-people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE_USER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Ernesto\",\n    \"last_name\": \"Gutierrez\",\n    \"email\": \"ernestogutttt@gmail.com\",\n    \"dob\": \"1998-03-25\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rh23v5dm2d.execute-api.us-east-1.amazonaws.com/create",
+					"protocol": "https",
+					"host": [
+						"rh23v5dm2d",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_USERS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://rh23v5dm2d.execute-api.us-east-1.amazonaws.com/users",
+					"protocol": "https",
+					"host": [
+						"rh23v5dm2d",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

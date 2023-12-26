@@ -31,7 +31,7 @@ functions:
     handler: src/functions/getPeople/index.handler
     events:
       - httpApi:
-          path: /
+          path: /get-swapi-people
           method: get
   createUser:
     handler: src/functions/createUser/index.handler
