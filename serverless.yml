@@ -1,0 +1,60 @@
+service: test-softtek
+frameworkVersion: "3"
+plugins:
+  - serverless-auto-swagger
+  - serverless-webpack
+  - serverless-offline
+package:
+  individually: false
+custom:
+  webpack:
+    webpackConfig: webpack.config.js
+    includeModules: true
+    packager: "npm"
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - translate:*
+          Resource: "*"
+        - Effect: Allow
+          Action:
+            - dynamodb:*
+          Resource: arn:aws:dynamodb:us-east-1:023471965393:table/Users
+functions:
+  getPeople:
+    handler: src/functions/getPeople/index.handler
+    events:
+      - httpApi:
+          path: /
+          method: get
+  createUser:
+    handler: src/functions/createUser/index.handler
+    events:
+      - httpApi:
+          path: /create
+          method: post
+  getUsers:
+    handler: src/functions/getUsers/index.handler
+    events:
+      - httpApi:
+          path: /users
+          method: get
+resources:
+  Resources:
+    UsersTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: Users
+        BillingMode: PAY_PER_REQUEST
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
