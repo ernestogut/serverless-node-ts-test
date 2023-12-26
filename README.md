@@ -6,7 +6,7 @@ Este proyecto esta desarrollado con Node.js, TypeScript y Serverless Framework, 
 
 ## Requisitos
 
-- Node.js 14.x o superior
+- Node.js 18.x o superior
 - Serverless Framework instalado (`npm install -g serverless`)
 
 ## Instalación
