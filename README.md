@@ -58,7 +58,7 @@ Abre Postman, dale click al MenuBar/File/Import y arrastra el archivo: `softtek-
 - **Endpoint:** `/get-swapi-people`
 - **Descripción:** Obtiene la lista de personas de Star Wars de la API SWAPI.
 - **Método:** GET
-- **Respuesta exitosa:** Código de estado 200 OK y cuerpo JSON con la lista de personajes.
+- **Respuesta exitosa:** Código de estado 200 OK y cuerpo JSON con la lista de personas.
 
 ## Despliegue
 
@@ -74,4 +74,12 @@ Para ejecutar las pruebas unitarias, utiliza el comando:
 
 ```
 npm test
+```
+
+## Documentación
+
+Una vez desplegado podemos acceder a la documentacion de Swagger en la siguiente ruta:
+
+```
+https://<api-id>.execute-api.us-east-1.amazonaws.com/swagger
 ```
