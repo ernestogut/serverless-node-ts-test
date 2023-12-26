@@ -4,3 +4,11 @@ jspm_packages
 
 # Serverless directories
 .serverless
+
+# Webpack
+
+.webpack
+
+# Swagger
+
+swagger

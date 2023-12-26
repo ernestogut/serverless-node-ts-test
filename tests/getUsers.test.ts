@@ -10,8 +10,7 @@ jest.mock('aws-sdk', () => {
     };
 });
 
-describe('Get users from dynamodb', () => {
-
+describe('Get users', () => {
     it('should get users from DynamoDB', async () => {
         const mockDynamoDBResponse = {
             Items: [

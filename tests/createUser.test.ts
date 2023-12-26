@@ -45,7 +45,7 @@ describe('Create user', () => {
         } as any);
         // Convertir el cuerpo de la respuesta a JSON
         output.body = JSON.parse(output.body);
-        // Realizar expectativas según el resultado esperado
+        // Verificar el resultado
         expect(output.statusCode).toBe(200);
         expect(output).toMatchObject(expectedOutput);
     });
