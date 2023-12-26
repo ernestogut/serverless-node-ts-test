@@ -27,6 +27,14 @@ Asegúrate de configurar tus credenciales de AWS para que Serverless Framework p
 
 Abre Postman, dale click al MenuBar/File/Import y arrastra el archivo: `softtek-test.postman_collection.json` a la ventana que aparece en la pantalla de la aplicación.
 
+## Despliegue
+
+Para desplegar la aplicación en AWS Lambda, utiliza el comando:
+
+```
+sls deploy
+```
+
 ## Uso
 
 ### Ruta POST (Users)
@@ -59,14 +67,6 @@ Abre Postman, dale click al MenuBar/File/Import y arrastra el archivo: `softtek-
 - **Descripción:** Obtiene la lista de personas de Star Wars de la API SWAPI.
 - **Método:** GET
 - **Respuesta exitosa:** Código de estado 200 OK y cuerpo JSON con la lista de personas.
-
-## Despliegue
-
-Para desplegar tu aplicación en AWS Lambda, utiliza el comando:
-
-```
-sls deploy
-```
 
 ## Pruebas unitarias
 
