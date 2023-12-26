@@ -29,7 +29,7 @@ Abre Postman, dale click al MenuBar/File/Import y arrastra el archivo: `softtek-
 
 ## Uso
 
-### Ruta POST
+### Ruta POST (Users)
 
 - **Endpoint:** `/create`
 - **Descripción:** Crea un nuevo usuario en la base de datos.
@@ -48,14 +48,14 @@ Abre Postman, dale click al MenuBar/File/Import y arrastra el archivo: `softtek-
 
 ### Ruta GET (Users)
 
-- **Endpoint:** /users
+- **Endpoint:** `/users`
 - **Descripción:** Obtiene la lista de usuarios.
 - **Método:** GET
 - **Respuesta exitosa:** Código de estado 200 OK y cuerpo JSON con la lista de usuarios.
 
 ### Ruta GET (Integración SWAPI)
 
-- **Endpoint:** /get-swapi-people
+- **Endpoint:** `/get-swapi-people`
 - **Descripción:** Obtiene la lista de personas de Star Wars de la API SWAPI.
 - **Método:** GET
 - **Respuesta exitosa:** Código de estado 200 OK y cuerpo JSON con la lista de personajes.
@@ -66,4 +66,12 @@ Para desplegar tu aplicación en AWS Lambda, utiliza el comando:
 
 ```
 sls deploy
+```
+
+## Pruebas unitarias
+
+Para ejecutar las pruebas unitarias, utiliza el comando:
+
+```
+npm test
 ```
