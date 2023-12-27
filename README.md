@@ -52,7 +52,7 @@ sls deploy
     "password": "123456"
   }
   ```
-- **Respuesta exitosa:** Código de estado 200 OK y cuerpo JSON con el mensaje y los datos del empleado creado.
+- **Respuesta exitosa:** Código de estado 200 OK y cuerpo JSON con el mensaje y los datos del usuario creado.
 
 ### Ruta GET (Users)
 
